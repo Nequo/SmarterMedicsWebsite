@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>HCI</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Smart Glasses For Medical Staff Training</strong> by Nadim, Daren and Maria</a>
+									<ul class="icons">
+                                        <li>Team 19 Repository</li>
+										<li><a href="https://github.com/Mightysaur/TestApp" target = "_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Human Computer Interaction</h1>
+									</header>
+
+									<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
+
+									<p>In this section, we will show the initial research, sketches and protopyes that we came up with for the HCI section of our project. We will also give an overview of our final User Interface.</p>
+
+
+									<hr class="major" />
+
+									<h2>HCI Related Research</h2>
+									<p>Below is a list of all the research and considerations that took into account when designing our solution. </p>
+
+                                    <div>
+				<p>Positioning of information on the glasses have varied effects depending on the type of task being performed [1]</p>
+				<table class="tg" style="undefined;table-layout: fixed; width: 778px">
+				<colgroup>
+					<col style="width: 381px">
+					<col style="width: 397px">
+				</colgroup>
+				  <tr>
+				    <th class="tg-yw4l">Central positioning</th>
+				    <th class="tg-yw4l">Peripheral positioning</th>
+				  </tr>
+				  <tr>
+				    <td class="tg-yw4l">If the user is performing an intensive primary task, placing data in the centre of their view allows for maximum continued focus on that particular task while also being able to interpret the information displayed.</td>
+				    <td class="tg-yw4l">This option allows for more comfort on the wearer as they won’t have a high concentration of information in particular area (including both information from the glasses as well as information from the real world).</td>
+				  </tr>
+				</table>
+				<p>Other AR considerations:</p>
+				<table class="tg" style="undefined;table-layout: fixed; width: 778px">
+				<colgroup>
+				<col style="width: 147px">
+				<col style="width: 631px">
+				</colgroup>
+				  <tr>
+				    <th class="tg-yw4l">Field Of View (FOV)</th>
+				    <td class="tg-yw4l">Field of view is important as you don’t want information to be obstructive but also be equally as readable so that the experience feels natural to the user as well as the people around the user - this is a critical consideration as it is a key requirement.</td>
+				  </tr>
+				  <tr>
+				    <th class="tg-yw4l">Interaction with virtual information</th>
+				    <td class="tg-yw4l">The method in which the user interacts with the glasses is an important factor both for the user and the requirements of the project. The interaction method should be intuitive and easy to execute especially for less technically advanced users.The interaction methods should not affect the flow of the consultation i.e. they should feel natural. We have found the main feasible methods are external buttons to the glasses, buttons on the glasses frame and an android application to interact with the glasses.</td>
+				  </tr>
+				  <tr>
+				    <th class="tg-yw4l">Physical Ergonomics</th>
+				    <td class="tg-yw4l">There are a variety of smart glasses available with varying feature sets. If we look at the market as well as the specifications the two best suited products are the Google glasses and Vuzix glasses. The main advantages being natural looks, affordability, sufficient interactive interfaces and comfort.</td>
+				  </tr>
+				</table>
+			</div>
+                                    <div class="slide-content">
+				<p>It’s important to consider conventional screen display methods since they are similar in some regards but caution needs to be taken. For instance, information must be prioritised to not overload the user and maximise retention.</p>
+				<br>
+				<p>HCI principles to be applied in AR and specifically to our project [2][3]:</p>
+				<ul>
+					<li>When adding elements → consider usefulness of the feature in relation to the goal of the application</li>
+					<li> Reduce cognitive load → Do not overwhelm the user with information</li>
+					<li>Reduce physical activity required to interact with the virtual environment</li>
+					<li>Reduce the timeand steps it takes to complete a task</li>
+					<li> Responsiveness → Make the application work as fast as possible to give a good user experience</li>
+					<li>Error Tolerance → Reduce the amount of bugs in order to avoid user frustration</li>
+				</ul>
+				<p>Hardware considerations:</p>
+				<table class="tg" style="undefined;table-layout: fixed; width: 788px">
+				<colgroup>
+				<col style="width: 147px">
+				<col style="width: 477px">
+				<col style="width: 164px">
+				</colgroup>
+				  <tr>
+				    <th class="tg-d1kj">Feature</th>
+				    <th class="tg-u722">Pros</th>
+				    <th class="tg-q9qv">Cons</th>
+				  </tr>
+				  <tr>
+				    <td class="tg-3we0">Gaze tracking</td>
+				    <td class="tg-yw4l">Quick input, Removes the need for hand gestures -&gt; shallow learning curve</td>
+				    <td class="tg-yw4l">Can be inaccurate<br>Possibly distracting</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-3we0">Speech recognition</td>
+				    <td class="tg-yw4l">Non primary user can input information (essential for this task)<br>Low training needed</td>
+				    <td class="tg-yw4l">Ambiguity, Accents, Can be low range</td>
+				  </tr>
+				</table>
+			</div>
+
+									<hr class="major" />
+
+									<h2>Initial  application diagram</h2>
+									<p>To start with, we decided to sketh the application user interface and control flow using wireframes. These guided the initial development but we have made lots of changes in order to produce our final application. </p>
+                                    
+                                    <div class="box alt">
+								        <div class="row 50% uniform">
+				                            <div class="6u"><span class="image fit"><img src="images/wireframe2.jpg" alt="" /></span></div>
+								            <div class="6u"><span class="image fit"><img src="images/wireframe3.jpg" alt="" /></span></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <hr class="major" />
+
+									<h2>Initial User Interface</h2>
+									<p>From our specification and requirements, we built a user interface prototype with placeholders for the various pages(Image on the left) that we thought we will need to implement our functionality. We also started on the main interface page for sessions (Image on the right). We put as few buttons as possible as we are always aiming for simplicity and ease of use.</p>
+                                    <div class="box alt">
+								        <div class="row 50% uniform">
+				                            <div class="2u"><span class="image fit"><img src="images/UI1.png" alt="" /></span></div>
+								            <div class="2u"><span class="image fit"><img src="images/UI2.png" alt="" /></span></div>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                    <hr class="major" />
+
+									<h2>Final User Interface</h2>
+									<p>For our final iteration in this part of the project, we made some important changes to our User Interface. Firstly, we added most of the pages from the drawer. Some of them still don't have any functionality but they were not features that were in our Requirements list. We decided to keep them as we think that they would be good additions in the future. We also made some important changes to the main session UI. The buttons are now more expressive and we also added a button to end the session (Back button) as well as one to check all words that have been said during the session. We also added a pre-session page so that The User explicitly presses on the "Start Session" button. This first set of images show the key UI components for a session:</p>
+                                    <div class="box alt">
+								        <div class="row 50% uniform">
+				                            <div class="3u"><span class="image fit"><img src="images/start_Session.png" alt="" /></span> A User Starts a Session Using this page</div>
+								            <div class="3u"><span class="image fit"><img src="images/in_session.png" alt="" /></span> This is the in-session UI</div>
+                                            <div class="3u"><span class="image fit"><img src="images/word_said.png" alt="" /></span>The first word that is said appears</div>
+                                            <div class="3u"><span class="image fit"><img src="images/def_shown.png" alt="" /></span>The user decides to show the definition</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <p><br> This next set of images shows the logs and favourites functionalities.</p>
+                                    <div class="box alt">
+								        <div class="row 50% uniform">
+				                            <div class="3u"><span class="image fit"><img src="images/logs.png" alt="" /></span> A Landing page for viewing logs</div>
+								            <div class="3u"><span class="image fit"><img src="images/log_words.png" alt="" /></span> List of words within a log</div>
+                                            <div class="3u"><span class="image fit"><img src="images/log_definition.png" alt="" /></span>Definition of a word with the option to ass to favourites</div>
+                                            <div class="3u"><span class="image fit"><img src="images/Favorites.png" alt="" /></span>View of favourite words</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <p>Finally, here is the current side bar menu:</p>
+                                    <div class="box alt">
+								        <div class="row 50% uniform">
+				                            <div class="3u"><span class="image fit"><img src="images/Menu1.png" alt="" /></span> A </div>
+								            <div class="3u"><span class="image fit"><img src="images/Menu2.png" alt="" /></span> </div>
+                                        </div>
+                                    </div>
+
+									<hr class="major" />
+
+									<h2>References</h2>
+                                    <ol >
+                                        <li> [1] Chuan-hoo Tan, Fiona Fui-Hoon Nah(Eds.). HCI in Business, Government and Organizations. Interacting with Information Systems. 4th International Conference, HCIBGO 2017, Held as Part of HCI International 2017, Vancouver, BC, Canada, July 9-14, 2017, Proceedings, Part I</li>
+                                        <li>[2] W. Huang, L. Alem, and M. A. Livingston, editors. Human Factors in Augmented Reality Environments. Springer, 2013.</li>
+                                        <li>[3] A. Dünser, R. Grasset, H. Seichter, and M. Billinghurst. Applying HCI principles to AR systems design. 2007</li>
+                                    </ol>
+
+								</section>
+
+						</div>
+					</div>
+
+								<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search 
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+                            -->
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="requirements.html">Requirements</a></li>
+										<li><a href="research.html">Research</a></li>
+<!--										<li>
+											<span class="opener">Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Etiam Dolore</a></li>
+										<li><a href="#">Adipiscing</a></li>
+										<li>
+											<span class="opener">Another Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+-->
+										<li><a href="HCI.html">HCI</a></li>
+										<li><a href="design.html">Design</a></li>
+										<li><a href="testing.html">Testing</a></li>
+										<li><a href="evaluation.html">Evaluation</a></li>
+										<li><a href="management.html">Management</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>The Team</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/Nadim.jpg" alt="" /></a>
+											<p>Nadim Edde Gomez</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/Daren.jpg" alt="" /></a>
+											<p>Daren Alfred</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/Maria.jpg" alt="" /></a>
+											<p>Maria Miscouridou</p>
+										</article>
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<ul class="contact">
+										<li class="fa-envelope-o"><a href="#">nadimeg@gmail.com</a></li>
+										<li class="fa-envelope-o"><a href="#">marmisc98@gmail.com</a></li>
+										<li class="fa-envelope-o"><a href="#">daren1997@hotmail.co.uk</a></li>
+
+										<li class="fa-home">University College London</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Smarter Medics. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

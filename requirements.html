@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Requirements</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Smart Glasses For Medical Staff Training</strong> by Nadim, Daren and Maria</a>
+									<ul class="icons">
+                                        <li>Team 19 Repository</li>
+										<li><a href="https://github.com/Mightysaur/TestApp" target = "_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>The Requirements</h1>
+									</header>
+
+
+                                    <p>
+                                        Our Client for this project is Dr. Atia Rafiq on behalf od NHS Digital. We have also been working closely with Hiroki Inagaki from NTT Data who provided us with the technical help that we needed. We had weekly meetings with Hiroki in order to ensure that our project was on schedule.
+                                    </p>
+                                    <p>We summarised the initial problem given by our client Dr Atia Rafiq as follows: <br>
+				“Provide medical students with a learning tool that will help them follow a GP consultation whilst not disrupting its general flow. “
+                                    </p>
+                                    <p>
+				The technology we have used is a pair of smart glasses from Vuzix and an Android smartphone. The user will have the glasses on during the consultation. As medical words are said, they will appear on the glasses and the user will be asked whether or not they wish to show a short definition of the term. The user can then show the definition for the current word or display the next word by using 2 easily accessible buttons on the phone application. <br>
+				<br>
+				The general problems that we considered through our design iterations are: Managing the user interaction so that it does not disrupt the consultation, displaying the words for a correct amount of time so that the screen does not clutter and showing the definition long enough for the user to not lose focus. <br></p>
+                                    <p> From this initial meeting, we set up a list of requirements that we refined throughout the development of the project to suit the clients' needs as best as possible. The project goals are listed below, followed by a detailed list of our final requirements.</p>
+
+									<hr class="major" />
+
+									<h2>Project Goals</h2>
+                                        <ul>
+                                            <li>Design an application that is simple and easy to use</li>
+                                            <li>Find a solution that does not disrupt the users's concentration</li>
+                                            <li>Provide some functionality for the user to come back to words for which they displayed a definition</li>
+                                            <li>Make the project expandandable to other fields and use cases</li>
+                                            <li>Allow flexible usage of the application (On the phone only or with the glasses</li>
+                                        </ul>
+
+									<hr class="major" />
+
+									<h2>MoSCoW <sup>[1]</sup> Style Requirements</h2>
+                                    <p>Once we defined our project goals, we wrote up a list of project requirements that we confirmed with our clients.</p>
+                                        The solution must:
+                                        <ul id="must-have">
+                                            <li>Implement voice recognition to understand the appropriate words (diseases and medicines)</li>
+                                            <li>Have a way for the user to accept or decline showing a definition of a word</li>
+                                            <li>Query a medical database in order to get the appropriate definitions </li>
+                                            <li>Display a short definition to the user in a simple manner</li>
+                                            <li>Be discrete and subtle so that it doesn’t interrupt the consultation</li>
+                                        </ul>
+                                        The solution should:
+                                        <ul id="should-have">
+                                            <li>Keep a log of the words that the user showed the definitions of</li>
+                                            <li>Allow the user to access these words after the consultation through a mobile interface</li>
+                                            <li>Display definitions for each word on the mobile interface</li>
+                                        </ul>
+                                        The solution could:
+                                        <ul id="could-have">
+                                            <li>Learn what words the user knows and not display them</li>
+                                        </ul>
+
+									<hr class="major" />
+
+									<h2>Personas</h2>
+									<p>Establishing our 2 personas played an important role in deciding how to implement the features to suit our requirements. We wanted to make the application as easy to use as possible by as many people as possible. Our 2 Personas are both medical students, our target user audience for "Smarter Medics". We took into account several factors: <br> <br>
+                                    - Familiarity with technology: We centred our development around simplicity and ease of use <br>
+                                    - Social Behaviour: We provide 2 usage options to suit different situations, using the phone only or using the glasses too.  
+                                    <br>
+                                    - Technical knowledge: We added a blacklist of terms that won't come up 
+                                    <br> <br>
+                                    Below are the two personas that we established:
+                                    
+                                    </p>
+                                    <div class="box alt">
+														<div class="row 50% uniform">
+															<div class="6u"><span class="image fit"><img src="images/elizabeth.png" alt="" /></span></div>
+															<div class="6u"><span class="image fit"><img src="images/Rob.png" alt="" /></span></div>
+                                                        </div>
+                                    </div>
+                                    	<hr class="major" />
+
+									<h2>Storyboards</h2>
+									<p>In the early stages of prototyping, we also drew out a typical storyboard for the usage of our application. This helped us establish the best workflow possible for our application.</p>
+                                                                        <div class="box alt">
+														<div class="row 50% uniform">
+															<div class="2u"><span class="image fit"><img src="images/sb1.jpg" alt="" /></span>
+                                                            <p>Patient Consultation</p></div>
+															<div class="2u"><span class="image fit"><img src="images/sb2.jpg" alt="" /></span><p>Medical Word</p></div>
+                                                            <div class="2u"><span class="image fit"><img src="images/sb3.jpg" alt="" /></span><p>User Input</p></div>
+                                                            <div class="2u"><span class="image fit"><img src="images/sb4.jpg" alt="" /></span><p>Display</p></div>
+                                                            <div class="2u"><span class="image fit"><img src="images/sb5.jpg" alt="" /></span><p>App UI</p></div>
+                                                        </div>
+                                    </div>
+                                    
+                                    	<hr class="major" />
+
+									<h2>Use Cases</h2>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+								</section>
+                            
+                            <hr class="major" />
+                            
+                            <h2>References</h2>
+									<ol>
+                                        <li>[1]"MoSCoW method", En.wikipedia.org, 2018. [Online]. Available: https://en.wikipedia.org/wiki/MoSCoW_method. [Accessed: 11- Nov- 2018].</li>
+                                    </ol>
+
+						</div>
+					</div>
+
+								<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search 
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+                            -->
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="requirements.html">Requirements</a></li>
+										<li><a href="research.html">Research</a></li>
+<!--										<li>
+											<span class="opener">Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Etiam Dolore</a></li>
+										<li><a href="#">Adipiscing</a></li>
+										<li>
+											<span class="opener">Another Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+-->
+										<li><a href="HCI.html">HCI</a></li>
+										<li><a href="design.html">Design</a></li>
+										<li><a href="testing.html">Testing</a></li>
+										<li><a href="evaluation.html">Evaluation</a></li>
+										<li><a href="management.html">Management</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>The Team</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/Nadim.jpg" alt="" /></a>
+											<p>Nadim Edde Gomez</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/Daren.jpg" alt="" /></a>
+											<p>Daren Alfred</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/Maria.jpg" alt="" /></a>
+											<p>Maria Miscouridou</p>
+										</article>
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<ul class="contact">
+										<li class="fa-envelope-o"><a href="#">nadimeg@gmail.com</a></li>
+										<li class="fa-envelope-o"><a href="#">marmisc98@gmail.com</a></li>
+										<li class="fa-envelope-o"><a href="#">daren1997@hotmail.co.uk</a></li>
+
+										<li class="fa-home">University College London</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Smarter Medics. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
