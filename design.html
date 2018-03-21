@@ -38,16 +38,18 @@
 										<h1>The design of our solution</h1>
 									</header>
 
-									<span class="image main"><img src="images/sysarch.png" alt="" /></span>
+									
 
 									<p>In this section we provide details on the design of our solution from a technical point of view. We will explain our system diagram, the design patterns that we used as well as our method for data storage.</p>
 
 
 									<hr class="major" />
 
-									<h2>Interdum sed dapibus</h2>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+									<h2>System Architecture</h2>
+                                    <span class="image main"><img src="images/sysarch.png" alt="" /></span>
+                                    <p>The disgram above shows the final iteration of our system architecture. The system has three main comoponents: The phone, the glasses and a backend online API. As can be seen in the diagram, there is minimal communication going out of the phone application. This design decision was made in order to reduce a risk of data leakage as we are dealing with confidential patient data. This is one of the primary reasons that we opted for local file storage and that we are using the in-built android speech to text functionality. </p>
+                                    
+                                    <p>The phone app makes http get requests to the online API that returns disctionary data on a word. The phone can be connected to the glasses via bluetooth in order to use them as an external display.</p>
 
 									<hr class="major" />
 
@@ -142,7 +144,6 @@
 									<header class="major">
 										<h2>Get in touch</h2>
 									</header>
-									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 									<ul class="contact">
 										<li class="fa-envelope-o"><a href="#">nadimeg@gmail.com</a></li>
 										<li class="fa-envelope-o"><a href="#">marmisc98@gmail.com</a></li>
