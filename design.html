@@ -59,9 +59,21 @@
 
 									<hr class="major" />
 
-									<h2>Lorem aliquam bibendum</h2>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+									<h2>Implementation of Key functionalities</h2>
+									<p>Here, we will present the key application functionalities along with our implementation. We will show some snippets of code to showcase how we designed the various parts of our solution.</p>
+                                    <h3>The XMLParser class</h3>
+                                    <p>In our XML parser, we have used a blacklist of words in the form of an array list. They are loaded from a String. We have used this method as it allows for extensibility in the future if we want to be able to load the blacklist from a text file for example.</p>
+                                    <span class="image main"><img src="images/blacklist.png" alt="" /></span>
+                                    <p>The following shows the code for retrieving the defintion from the online dictionary. The way we have done it is to retrieve all words from between the defintion tags "dt". We ignore any specific formatting. We have tried to get in touch with Meriam Websters in order to make our parser better but we still have not received a response. </p>
+                                    <span class="image main"><img src="images/xmlParserDef.png" alt="" /></span>
+                                    
+                                    <h3> Sending and Receiving the data with bluetooth</h3>
+                                    <p>To send the data to the glasses, we have made it so that the specific buttons write the information as bytes and send them to the created Bluetooth Connection. The code below shows how we have implemented this for the next definition button.</p>
+                                    <span class="image main"><img src="images/show_defe.png" alt="" /></span>
+                                    
+                                    <p>In order to display the information on the glasses, we had to post the job to the UI thread. This is because when the bluetooth connection is established, a new connected thread is created and manages all the data reading and writing. This bit of code is an extract from the glasses application that shows how we deal with changing the display of the glasses.</p>
+                                    <span class="image main"><img src="images/glasses_BT.png" alt="" /></span>
+
 
 								</section>
 
