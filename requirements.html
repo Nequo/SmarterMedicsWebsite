@@ -70,7 +70,10 @@ The requirements elicitation process also included use cases and prototyping, wh
 									<hr class="major" />
 
 									<h2>MoSCoW <sup>[1]</sup> Style Requirements</h2>
-                                    <p>Once we defined our project goals, we wrote up a list of project requirements that we confirmed with our clients.</p>
+                                    <p>Once we defined our project goals, we wrote up a list of project requirements that we confirmed with our clients. Our requirements can be categorised into functional and non-functional. Our functional requirements define the specific behaviours of the system and include but are not limited to: implement the speech to text functionality, display the definitions of medical terms when requested, save a log of the words so that the user can come back to them after the session has ended.
+The non-functional requirements define how the system is supposed to be rather than the system is supposed to do. The main requirement is that the solution we provide is subtle and doesn’t disrupt the flow of the consultation. Our projects’ qualities include scalability and extensibility, simply by using a different database. In addition, after some safety concerns we decided to use the speech to text functionality and query the database in real time without saving the text, so that the conversation isn't accessible as it includes personal data. 
+A complete list of the MoSCoW requirements can be found below. 
+</p>
                                         The solution must:
                                         <ul id="must-have">
                                             <li>Implement voice recognition to understand the appropriate words (diseases and medicines)</li>
