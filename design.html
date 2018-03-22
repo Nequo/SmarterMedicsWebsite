@@ -78,6 +78,10 @@
                                     <p>We use the singleton design pattern with a few modifications so that there is only one instance of the SpeechRecognizer class. This is to ensure that if the user is not recording then the class needs to be destroyed to prevent it from being exploited in anyway. This also prevents multiple hanging instances being created resulting in larger battery drains. This results in the class’ lifespan being tied to the on/off button in the session menu:</p>
 									<span class="image main"><img src="images/singleton.png" alt="" /></span>
                                     
+                                    <h3>Proactor Design Pattern</h3>
+                                    <p>In our XML pull parser for the definition retrieval (found in the VoiceRecognitionActivity) we have used asynchronous tasks in order to make sure that the data retrieval on slower connections both user side and server side do not affect UI thread of the application. So to do this we have an initiator which sends out the request for the XML page and once the task has finished we then have a completion dispatcher and handler which signals that the thread has completed and the UI threads can be updated:</p>
+                                    <span class="image main"><img src="images/proactor.png" alt="" /></span>
+                                    
                                     
                                     <hr class="major" />
 
