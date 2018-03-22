@@ -42,6 +42,11 @@
                                     <p>
                                         Our Client for this project is Dr. Atia Rafiq on behalf od NHS Digital. We have also been working closely with Hiroki Inagaki from NTT Data who provided us with the technical help that we needed. We had weekly meetings with Hiroki in order to ensure that our project was on schedule.
                                     </p>
+                                    <p>The way we collected our requirements was through face to face meetings with our clients, as well as brainstorming.
+We had an initial meeting with Dr. Atia Rafiq, with whom we discussed the idea of the project. We realised the need of a new way for trainees to have access to definitions of medical terms during a consultation. The main concern of Dr. Atia was that the solution had to be subtle and shouldn’t distract the patient or the doctor. She was flexible on the way the features were implemented, as long as medical terms were picked out from the conversation and the trainee was asked whether they wanted to see a specific definition. Even though she suggested that we used the medical database called SNOMED, we ended up using Merriam Webster as there was no easy way to query SNOMED.
+Following, we had weekly meetings with Mr. Hiroki Inagaki during which we agreed on the more technical details of the project. Initially we thought of many different ways to implement the features. For example, for the user to select whether to display the definition, we consider the use of the button embedded on the smart glasses, the use of an external button, a button on the phone app and the gaze-tracking functionality. As we realised that the only way to decide on an approach was to try them, our requirements are more generic and only request the ability of the user to be prompted with a question.
+The requirements elicitation process also included use cases and prototyping, which can be found later on in this section.
+</p>
                                     <p>We summarised the initial problem given by our client Dr Atia Rafiq as follows: <br>
 				“Provide medical students with a learning tool that will help them follow a GP consultation whilst not disrupting its general flow. “
                                     </p>
@@ -49,7 +54,7 @@
 				The technology we have used is a pair of smart glasses from Vuzix and an Android smartphone. The user will have the glasses on during the consultation. As medical words are said, they will appear on the glasses and the user will be asked whether or not they wish to show a short definition of the term. The user can then show the definition for the current word or display the next word by using 2 easily accessible buttons on the phone application. <br>
 				<br>
 				The general problems that we considered through our design iterations are: Managing the user interaction so that it does not disrupt the consultation, displaying the words for a correct amount of time so that the screen does not clutter and showing the definition long enough for the user to not lose focus. <br></p>
-                                    <p> From this initial meeting, we set up a list of requirements that we refined throughout the development of the project to suit the clients' needs as best as possible. The project goals are listed below, followed by a detailed list of our final requirements.</p>
+                                    <p> From the initial meeting, we set up a list of requirements that we refined throughout the development of the project to suit the clients' needs as best as possible. The project goals are listed below, followed by a detailed list of our final requirements.</p>
 
 									<hr class="major" />
 
@@ -87,7 +92,7 @@
 
 									<hr class="major" />
 
-									<h2>Personas</h2>
+									<h2>Personas and Scenarios</h2>
 									<p>Establishing our 2 personas played an important role in deciding how to implement the features to suit our requirements. We wanted to make the application as easy to use as possible by as many people as possible. Our 2 Personas are both medical students, our target user audience for "Smarter Medics". We took into account several factors: <br> <br>
                                     - Familiarity with technology: We centred our development around simplicity and ease of use <br>
                                     - Social Behaviour: We provide 2 usage options to suit different situations, using the phone only or using the glasses too.  
@@ -99,8 +104,18 @@
                                     </p>
                                     <div class="box alt">
 														<div class="row 50% uniform">
-															<div class="6u"><span class="image fit"><img src="images/elizabeth.png" alt="" /></span></div>
-															<div class="6u"><span class="image fit"><img src="images/Rob.png" alt="" /></span></div>
+															<div class="6u"><span class="image fit"><img src="images/elizabeth.png" alt="" /></span>Elizabeth has always been a very hard working student. Her dream has always been to become a doctor and now she is making it true! She is close to finishing her studies in medical school and she is about to start her training to become a General Practitioner. 
+
+She is not very outgoing and knows that she needs to develop her social skills. Sometimes she is too shy to ask a question about something she doesn’t know and prefers to look it up later. This approach might be a problem during a consultation with a patient, as if she doesn’t know a medical term about the patient’s condition, she will not be able to make a correct diagnosis. 
+
+She would like to have a way to quickly look up the medical terminology she is unfamiliar with, without interrupting the flow of the consultation. Also, she is not very experienced with augmented reality, so she would like to use a system that is easy to use as a beginner.
+</div>
+															<div class="6u"><span class="image fit"><img src="images/Rob.png" alt="" /></span>Rob is a very outgoing extroverted student. He loves going to parties with his friends and getting to know other people. He has always been very keen about helping others, especially the elderly. The loss of his grandfather when his was young is one of the main reasons he has always wanted to become a doctor. 
+
+He has now started his training to become a fully qualified general practitioner. He has already been to a situation where during a consultation the patient or the doctor mentioned medical terminology he doesn’t remember. Usually he can look it up in a book or online, but this process can be distracting for the patient or make it look like the trainee is not paying attention to the consultation. 
+
+He would like a way to be able to look up medical terms more easily with the help of technology. He is familiar with augmented reality and generally likes being up to date with technological gadgets.
+</div>
                                                         </div>
                                     </div>
                                     	<hr class="major" />
