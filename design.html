@@ -47,9 +47,9 @@
 
 									<h2>System Architecture</h2>
                                     <span class="image main"><img src="images/sysarch.png" alt="" /></span>
-                                    <p>The disgram above shows the final iteration of our system architecture. The system has three main comoponents: The phone, the glasses and a backend online API. As can be seen in the diagram, there is minimal communication going out of the phone application. This design decision was made in order to reduce a risk of data leakage as we are dealing with confidential patient data. This is one of the primary reasons that we opted for local file storage and that we are using the in-built android speech to text functionality. </p>
+                                    <p>The diagram above shows the final iteration of our system architecture. The system has three main components: The phone, the glasses and a backend online API. As can be seen in the diagram, there is minimal communication going out of the phone application. This design decision was made in order to reduce a risk of data leakage as we are dealing with confidential patient data. This is one of the primary reasons that we opted for local file storage and that we are using the in-built android speech to text functionality. </p>
                                     
-                                    <p>The phone app makes http get requests to the online API that returns disctionary data on a word. The phone can be connected to the glasses via bluetooth in order to use them as an external display.</p>
+                                    <p>The phone app makes http get requests to the online API that returns dictionary data on a word. The phone can be connected to the glasses via bluetooth in order to use them as an external display.</p>
 
 									<hr class="major" />
 
@@ -64,7 +64,7 @@
                                     <h3>The XMLParser class</h3>
                                     <p>In our XML parser, we have used a blacklist of words in the form of an array list. They are loaded from a String. We have used this method as it allows for extensibility in the future if we want to be able to load the blacklist from a text file for example.</p>
                                     <span class="image main"><img src="images/blacklist.png" alt="" /></span>
-                                    <p>The following shows the code for retrieving the defintion from the online dictionary. The way we have done it is to retrieve all words from between the defintion tags "dt". We ignore any specific formatting. We have tried to get in touch with Meriam Websters in order to make our parser better but we still have not received a response. </p>
+                                    <p>The following shows the code for retrieving the definition from the online dictionary. The way we have done it is to retrieve all words from between the defintion tags "dt". We ignore any specific formatting. We have tried to get in touch with Merriam Websters in order to make our parser better but we still have not received a response. </p>
                                     <span class="image main"><img src="images/xmlParserDef.png" alt="" /></span>
                                     
                                     <h3> Sending and Receiving the data with bluetooth</h3>

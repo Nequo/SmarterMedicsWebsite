@@ -38,13 +38,13 @@
 										<h1>Our Research</h1>
 									</header>
 
-									<p>In this section, we will be describing the research that we conducted at various stages of development. We will talk about our research on devices, external dictionary services and speech recognition APIs. In each section we will see the options we considered along with an explanation detailing our choice for the final option. For research relating to Human Computer Interaction, please visit our <a href="HCI.html">HCI</a> section. Given that our client wanted a smart glasses application, the technologies available are limited, hence why our research is concise. In our minds, we have opted for the optimal choices in terms of feasability.</p>
+									<p>In this section, we will be describing the research that we conducted at various stages of development. We will talk about our research on devices, external dictionary services and speech recognition APIs. In each section we will see the options we considered along with an explanation detailing our choice for the final option. For research relating to Human Computer Interaction, please visit our <a href="HCI.html">HCI</a> section. Given that our client wanted a smart glasses application, the technologies available are limited, hence why our research is concise. In our minds, we have opted for the optimal choices in terms of feasibility.</p>
 
 
 									<hr class="major" />
 
 									<h2>Devices</h2>
-									<p>For our project we had to chose 2 devices: a phone and a pair of smart glasses. 
+									<p>For our project we had to choose 2 devices: a phone and a pair of smart glasses. 
                                     We had 2 options for our glasses: The google glasses or the Vuzix M-100 [1]. Below is a table comparing both devices: </p>
                                     
                                     <div class="table-wrapper">
@@ -101,26 +101,26 @@
                                         </ul>
                                     </div>
                                     
-                                    For our phone, the choice between operating systems was simple; given the fact that the glasses are running android, we opted for the use of an android device. A plus side of this is that android smartphones are available for much cheaper than iOS devices and hence reduce the cost of using our solution. In the future, teams mmight look to implement an iOS app but we have left it out for our project for timing reasons.
+                                    For our phone, the choice between operating systems was simple; given the fact that the glasses are running android, we opted for the use of an android device. A plus side of this is that android smartphones are available for much cheaper than iOS devices and hence reduce the cost of using our solution. In the future, teams might look to implement an iOS app but we have left it out for our project for timing reasons.
 
                                     <hr class="major" />
 
 									<h2>Programming languages</h2>
-									<p>Given that we were going to use an Android phone and glasses running Android natively, we have programmed our application in Java using Android Studio. We have used the Android documentation [2] extensively in order to implement the app's features. Given that we were familiar with java, this let us focus on development rather than learning a new language frokm scratch. <br> 
+									<p>Given that we were going to use an Android phone and glasses running Android natively, we have programmed our application in Java using Android Studio. We have used the Android documentation [2] extensively in order to implement the app's features. Given that we were familiar with java, this let us focus on development rather than learning a new language from scratch. <br> 
                                     
-                                    For data storage, we had a choice between json and XML as they are the 2 most popular serialisation languages available. We opted with XML because as described below, our dictionary API sued the same language. We could then reuse our knowledge and code for writing to XMl documents and parsing them. We had initially thought of having an online database to store the words, however we went with local storage in XML as this makes the application faster, and will be useful in the future if someone would like to collect data about our application.</p>
+                                    For data storage, we had a choice between json and XML as they are the 2 most popular serialisation languages available. We opted with XML because as described below, our dictionary API used the same language. We could then reuse our knowledge and code for writing to XML documents and parsing them. We had initially thought of having an online database to store the words, however we went with local storage in XML as this makes the application faster, and will be useful in the future if someone would like to collect data about our application.</p>
                                     
 									<hr class="major" />
 
 									<h2>Voice recognition and dictionary services</h2>
-									<p>For voice recognition, we considered various options including using google's Cloud API [3], as well as third party services. However, we settled on using the in-build speech to text API on Android phones. We decided to go with this for our solution as it has no cost of usage unlinke google cloud and will also ensure better data privacy since the conversations are not sent to external sources unlinke with third party APIs. Additionally, given that we have programmed our application in java using Android libraries, this solution was easier to implement.</p>
+									<p>For voice recognition, we considered various options including using google's Cloud API [3], as well as third party services. However, we settled on using the in-build speech to text API on Android phones. We decided to go with this for our solution as it has no cost of usage unlike google cloud and will also ensure better data privacy since the conversations are not sent to external sources unlike with third party APIs. Additionally, given that we have programmed our application in java using Android libraries, this solution was easier to implement.</p>
                                     
-									<p>With the dictionary services, we initially had thought of using Text Mining algorithms in order to search the output text for medical terms and then pass them onto a medical Database. However, this solution would have taken us too long to implement in the given time frame and can always be added in the future. Instead, we have used Meriam Webster's medical dicitonary online API [4]. It is a REST API that allows us to query the server for a word and that returns detailed information relating to dictionary attributes. We chose this as our solution because word definitions would be more accurate and we can just check if a word is contained inside the medical dictionary. Compared to text mining, this alternative saves us time as there is no required algorithm, but it depends on the server being up. If we were to carry this project out further, I would suggest changing the way of retrieving medical definitions as there is a limit to the volume of API calls given that the service is free to use. </p>
+									<p>With the dictionary services, we initially had thought of using Text Mining algorithms in order to search the output text for medical terms and then pass them onto a medical Database. However, this solution would have taken us too long to implement in the given time frame and can always be added in the future. Instead, we have used Merriam Webster's medical dictionary online API [4]. It is a REST API that allows us to query the server for a word and that returns detailed information relating to dictionary attributes. We chose this as our solution because word definitions would be more accurate and we can just check if a word is contained inside the medical dictionary. Compared to text mining, this alternative saves us time as there is no required algorithm, but it depends on the server being up. If we were to carry this project out further, I would suggest changing the way of retrieving medical definitions as there is a limit to the volume of API calls given that the service is free to use. </p>
 
                                     <hr class="major" />
                                     <h2>Summary</h2>
                                     
-                                    <p> For our final solution, we opted with using an Android phone alongside the Vuzix M-100 Smart Glasses. We have used Android's in-build Speech to Text functionality and Meriam Webster's online medical dictionary API for picking up words and getting their definitions.</p>
+                                    <p> For our final solution, we opted with using an Android phone alongside the Vuzix M-100 Smart Glasses. We have used Android's in-build Speech to Text functionality and Merriam Webster's online medical dictionary API for picking up words and getting their definitions.</p>
                                     <p> The decisions we made took into account the time we had to complete the project as well as our individual expertise. In the end we managed to deliver a working solution, a product of our good choices.</p>
 									
                                     
