@@ -53,11 +53,33 @@
 
 									<hr class="major" />
 
-									<h2>Magna etiam veroeros</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-
-									<hr class="major" />
+									<h2>Design Patterns</h2>
+                                    <h3>Builder Design Pattern</h3>
+									<p>Throughout the application the builder design pattern has been used to create prompt boxes that can be modified using various method essentially allowing them to be freely formed for the situation at hand. Here is an example: 
+                                    </p>
+                                     <span class="image main"><img src="images/builder.png" alt="" /></span>
+                                    <p>Initially the alert box is just comprised of a blank slate which then can be customised for a particular prompt. For this basic dialog box we include a description of the action as well as two options that they can take. This freedom and flexibility prevents us from having to create a new response system using buttons and textboxes which takes much longer and can also result in inconsistencies.
+                                    </p>
+                                
+                                    <h3>Factory Design Pattern</h3>
+                                    <p>When manipulating XML files we used two classes with the factory design pattern. The first one is the DocumentBuilderFactory class which allows use to create a parser that can make DOM object trees from XML documents. This tree can then be manipulated while still maintaining the XML format which is very useful when updating a text file if we want to add or remove a session/favorited word.</p>
+                                    <span class="image main"><img src="images/factory#.png" alt="" /></span>  
+                                    <p>We then use another factory class which is the TransformerFactory which allows the creation of Transformer objects. In our case, the Transformer Object is used to update our XML files by using the originally saved XML file as the source and the new tree what we built using the DocumentBuilderFactory class as the new result.</p>
+                                    
+                                    <h3>Observer Design Pattern</h3>
+                                    <p>The observer pattern is actually quite common in Android as OnClickListeners use an implementation of this. However we also have the observer pattern for both our bluetooth connection to our glasses as well as the voice recognition component.
+                                    </p>
+                                    <p>For the voice recognition, an intent is used which is sent every time the SpeechRecognizer gets anyform of an update. This can be partially converted voice input, fully converted input or even when the volume of the input changes. We then have to create an observer which can identify these changes and make appropriate decisions with the data. For example if the user starts speaking, we should update the volume bar or if a sentence has been fully converted:</p>
+                                    <span class="image main"><img src="images/observer.png" alt="" /></span>
+                                    
+                                    <p>We also have the same thing with our bluetooth component on the smart glasses which wait for an update from the smartphone application for when a new word has been found or if a definition needs to be displayed.</p>
+                                    
+                                    <h3>Singleton Design Pattern</h3>
+                                    <p>We use the singleton design pattern with a few modifications so that there is only one instance of the SpeechRecognizer class. This is to ensure that if the user is not recording then the class needs to be destroyed to prevent it from being exploited in anyway. This also prevents multiple hanging instances being created resulting in larger battery drains. This results in the class’ lifespan being tied to the on/off button in the session menu:</p>
+									<span class="image main"><img src="images/singleton.png" alt="" /></span>
+                                    
+                                    
+                                    <hr class="major" />
 
 									<h2>Implementation of Key functionalities</h2>
 									<p>Here, we will present the key application functionalities along with our implementation. We will show some snippets of code to showcase how we designed the various parts of our solution.</p>
