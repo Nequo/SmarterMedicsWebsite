@@ -45,7 +45,24 @@
 									<hr class="major" />
 
 									<h2>Performance Testing</h2>
-									<p>First of all we carried out some performance testing using android studio's in-built tool. This allowed us to see if our application was using a certain resource too much. Below is a comparison of our testing from midway through the development process (left) and at the end of development (right).</p>
+									<p>First of all we carried out some performance testing using android studio's in-built tool. This allowed us to see if our application was using a certain resource too much. Below is a comparison of our testing from midway through the development process and at the end of development.</p>
+                                    
+                                    <span class="image main"><img src="images/performance1.png" alt="" /></span>
+                                    <p>CPU usage is very low even when using speech recognition while also sending data to the dictionary server. Other usage of the app has very minimal impact on the CPU.
+ 
+When it comes to memory there is a high baseline usage but does not increase much when being used in a session which is to be expected.
+ 
+We have also monitored memory for prolonged uses to see if there was any memory leak dues to poorly written code but within our testing we have not spotted any abnormalities.
+ 
+Network usages us also within the expected boundaries as data is only transferred during the lookup of definitions and the volume of data is very small due to the information sent and received being small string in xml.
+</p>
+                                    <span class="image main"><img src="images/performance1.png" alt="" /></span>
+                                    <p>This graph shows the second phase of performance testing which was taken at the very end of the development. Since the last performance test, writing and reading from storage using XML serializers as well as bluetooth connectivity has been added. There is a significant hike in memory usage towards the end of sessions which is expected as that is when all the data from a session is being written. 
+
+Due to the added bluetooth functionality if we compare to the CPU usage in the last test you can see that it is used more frequently at a consistent rate as opposed to spikes. This is expected when using bluetooth and does not affect the user in any way. However due to the increased usage there is a minor increase on battery drain which is a caveat when using bluetooth in the first place.
+
+Overall the addition of the extra features have not introduced any problems on the hardware side of things and should continue to function well on a large range of Android devices.
+</p>
 
 									<hr class="major" />
 
